@@ -1,0 +1,29 @@
+{
+  "name": "rr7-seo",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build": "patch-package && vite build && tsc",
+    "test": "vitest src"
+  },
+  "devDependencies": {
+    "@microsoft/api-extractor": "^7.58.2",
+    "@types/node": "^25.6.0",
+    "@vitest/coverage-v8": "^4.1.4",
+    "fast-xml-parser": "^5.6.0",
+    "patch-package": "^8.0.1",
+    "typescript": "~6.0.2",
+    "unplugin-dts": "^1.0.0-beta.6",
+    "vite": "^8.0.4",
+    "vitest": "^4.1.4"
+  },
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "peerDependencies": {
+    "react-router": "^7.x"
+  }
+}
