@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/cha0s/rr7-seo/compare/rr7-seo-v1.0.2...rr7-seo-v1.0.3) (2026-04-16)
+
+
+### Continuous Integration
+
+* add repository for provenance ([02a8cfa](https://github.com/cha0s/rr7-seo/commit/02a8cfa2c4da7ec275414da18aa4ffffae0c6b64))
+
 ## [1.0.2](https://github.com/cha0s/rr7-seo/compare/rr7-seo-v1.0.1...rr7-seo-v1.0.2) (2026-04-16)
 
 
