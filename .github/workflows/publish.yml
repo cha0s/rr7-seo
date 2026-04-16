@@ -57,8 +57,9 @@ jobs:
       - if: ${{ steps.release.outputs.releases_created }}
         name: 🏗️ Build and Publish
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.RELEASE_PLEASE_NPM_TOKEN }}
+          NPM_AUTH_TOKEN: ${{ secrets.RELEASE_PLEASE_NPM_TOKEN }}
         run: |
           npm ci
           npm run build
+          echo "//registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}" >> .npmrc
           npm publish --provenance --access public
